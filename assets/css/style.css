@@ -1,0 +1,660 @@
+:root {
+    --font-primary: avenir-demi, "Ubisoft Sans Bold", sans-serif;
+    --font-second: portrait, Ubisoft Sans, serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.background{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://static-dm.ubisoft.com/assassins-creed/franchise/prod/b7db6092b3081a637071c8a88a9270a0.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+/*header*/
+
+header {
+    width: 100vw;
+    background-color: hsla(0, 0%, 0%, 0.92);
+    padding: 12px 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.85);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.AC-logo {
+    width: 170px;
+    padding: 0px 50px 0px 8px;
+}
+
+header ul {
+    display: flex;
+    gap: 80px;
+    font-size: 15px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0px 0px 29px 0px;
+    border-bottom: 5px solid whitesmoke;
+    transition: padding .5s ease;
+}
+
+nav a:hover {
+    padding: 0px 0px 24px 0px;
+}
+
+.header-container {
+    display: flex;
+}
+
+.button-header {
+    margin-right: 70px;
+    background-color: rgb(165, 0, 0);
+    color: white;
+    border: none;
+    font-family: var(--font-primary);
+    padding: 8px 15px;
+    box-shadow: 0px 0px 10px rgb(36, 36, 36);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    transform: scale(1.0);
+    text-decoration: none;
+}
+
+.button-header-title {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-header-subtitle {
+    font-size: 11px;
+}
+
+.button-header:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+.nav-mobile-button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    display: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.barra{
+    background-color: white;
+    margin: 8px 0px;
+    width: 100%;
+    height: 2px;
+}
+
+/*FIM header*/
+
+/*banner*/
+
+.banner {
+    height: 950px;
+    background-image: url(https://wallpapercave.com/wp/wp1901961.jpg);
+    background-size: cover;
+}
+
+.video-banner {
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(146, 0, 0), rgb(168, 0, 0), transparent);
+    backdrop-filter: blur(10px);
+    clip-path: polygon(0 0, 100% 0, calc(100% - clamp(160px, 12vh, 200px)) 100%, 0 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-information-container {
+    width: 65%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: var(--font-second);
+    text-align: center;
+}
+
+.banner-information-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.banner-information-content video {
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.title-information-content {
+    font-size: 35px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.information-content {
+    font-family: var(--font-primary);
+    font-weight: normal;
+    text-align: center;
+    width: 90%;
+    line-height: 30px;
+}
+
+.information-content-mobile {
+    font-family: var(--font-primary);
+    font-weight: normal;
+    text-align: center;
+    width: 90%;
+    line-height: 30px;
+    display: none;
+}
+
+.button-banner {
+    background-color: rgb(255, 255, 255);
+    color: rgb(124, 124, 124);
+    border: none;
+    font-family: var(--font-primary);
+    box-shadow: 0px 0px 10px rgb(36, 36, 36);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    transform: scale(1.0);
+    text-decoration: none;
+    width: 30%;
+    height: 7%;
+}
+
+.button-banner:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 5px whitesmoke;
+}
+
+/*FIM banner*/
+
+/*Visao geral*/
+
+.visao-geral{
+    background: linear-gradient(180deg, rgba(121, 0, 0, 0.26), rgba(121, 0, 0, 0.20), rgba(121, 0, 0, 0.123), rgba(121, 0, 0, 0.068),transparent, rgba(121, 0, 0, 0.123), rgba(121, 0, 0, 0.20), rgba(121, 0, 0, 0.4));
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-visao-geral {
+    font-weight: normal;
+    font-size: xx-large;
+    font-family: var(--font-second);
+    color: white;
+}
+
+.title-visao-geral h1 {
+    font-weight: normal;
+    font-family: var(--font-second);
+}
+
+.container-visao-geral{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 100px;
+}
+
+.container-content{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-visao-geral{
+    color: rgb(255, 255, 255);
+    padding: 30px 32px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 20px -8px, rgba(255, 255, 255, 0.2) 0px 0px 2px 0px inset;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+    font-family: var(--font-second);
+    margin-left: -15px;
+    max-height: 450px;
+    min-width: 350px;
+}
+
+.content-visao-geral-title{
+    font-family: var(--font-second);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 0px;
+}
+
+.content-visao-geral p{
+    font-family: var(--font-primary);
+    font-size: 15px;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.reverse .content-visao-geral{
+    margin-right: -15px;
+    margin-left: 15px;
+}
+
+.image-content-visao-geral{
+    height: 100%;
+    width: 100%;
+}
+
+.image-content-visao-geral > img{
+    height: 100%;
+}
+/*FIM visao geral*/
+
+
+/*detalhes*/
+
+.detalhes{
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    background-color: rgba(253, 63, 63, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 20px -8px, rgba(255, 255, 255, 0.2) 0px 0px 2px 0px inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalhes-container{
+    margin: 50px 0px;
+    width: 75%;
+    height: 85%;
+}
+
+.detalhes-title-and-subtitle h1{
+    font-family: var(--font-second);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: px;
+}
+
+.detalhes-title-and-subtitle p{
+    font-family: var(--font-primary);
+    font-size: 17px;
+    max-width: 1000px;
+    font-weight: normal;
+}
+
+.detalhes-container table{
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-primary);
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.detalhes-container table td{
+    min-width: 200px;
+    padding: 0px 10px ;
+}
+
+.ultimo-p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mobile-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mobile-table img{
+    margin-top: 5px;
+}
+
+.table-mobile{
+    display: none;
+}
+
+.ultimo-p-mobile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*FIM detalhes*/
+
+footer{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.canais{
+    position: absolute;
+    height: 100%;
+    left: 10%;
+    color: rgb(155, 155, 155);
+    font-family: var(--font-primary);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-socias-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.footer-socias-content img{
+    width: 38px;
+    transition: all 0.3s normal;
+}
+
+.footer-socias-content img:hover{
+    background-color: rgb(190, 0, 0);
+    border-radius: 100%;
+}
+
+
+
+@media (max-width: 1370px) {
+    .information-content {
+        width: 70%;
+    }
+
+    .canais{
+        left: 5%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px){
+    .nav-desktop{
+        display: none;
+    }
+
+    
+    header{
+        padding: 10px;
+    }
+
+    .AC-logo{
+        padding: 0px;
+    }
+
+    .AC-logo img{
+        width: 135px;
+    }
+
+    .nav-mobile-button{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .button-header{
+        display: none;
+    }
+
+    .information-content {
+        display: none;
+    }
+
+    .information-content-mobile {
+        display: block;
+    }
+
+    /*banner*/
+    .banner {
+        height: 1050px;
+        background-image: url(https://wallpapercave.com/wp/wp1901961.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .video-banner {
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(0deg, rgb(146, 0, 0), rgb(168, 0, 0), transparent);
+        clip-path: polygon(0px 179.85px, 100% 0px, 100% 100%, 0px 100%);
+    }
+
+    .banner-information-container{
+        height: 10%;
+        justify-content: center;
+        margin-top: 120px;
+    }
+
+    .banner-information-content video {
+        margin-top: -10px;
+        width: 450px;
+    }
+
+    .title-information-content {
+        display: none;
+    }
+
+    .banner-information-title img{
+        height: 90px;
+    }
+
+    .button-banner {
+        display: none;
+    }
+
+    .information-content-mobile{
+        margin-top: -1px;
+        width: 120%;
+    }
+
+    /*fim banner*/
+
+    .title-visao-geral {
+        font-size: x-large;
+    }
+
+    .container-content{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-visao-geral{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 400px;
+        margin-top: 130px;
+        margin-bottom: 200px;
+    }
+
+    .reverse .content-visao-geral{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .content-visao-geral{
+        margin-left: 0px;
+    }
+
+    .image-content-visao-geral{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .image-content-visao-geral > img{
+        max-width: 100%;
+        max-height: 100% 
+    }
+
+    .content-visao-geral-title{
+        font-size: 30px;
+    }
+
+    .detalhes-container table{
+        font-size: 15px;
+
+    }
+    .canais{
+        display: none;
+    }
+
+    table td{
+        font-size: 15px;
+    }
+
+    .ultimo-p{
+        display: none;
+    }
+
+    .mobile-table{
+        display: block;
+    }
+}
+
+@media (max-width: 770px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .banner-information-title img{
+        height: 80px;
+    }
+
+    .information-content-mobile{
+        font-size: 90%;
+        width: 140%;
+    }
+
+    .content-visao-geral{
+        min-width: 10px;
+        padding: 10px 20px;
+    }
+
+    .content-visao-geral h1{
+        text-align: center;
+        font-size: 125%;
+    }
+
+    .content-visao-geral p{
+        text-align: center;
+        font-size: 90%;
+    }
+    
+    .detalhes-title-and-subtitle{
+        text-align: center;
+    }
+    
+    .footer-socias-content img{
+        width: 30px;
+    }
+
+    .footer-socias-content{
+        gap: 15px;
+    }
+
+    .table-desktop{
+        display: none;
+    }
+
+    .table-mobile{
+        display: block;
+    }
+
+    .banner-information-content video {
+        width: 120%;
+    }
+
+    .container-visao-geral{
+        gap: 290px;
+
+    }
+
+    .container-visao-geral{
+        margin-top: 90px;
+        margin-bottom: 200px;
+    }
+
+    .title-visao-geral{
+        font-size: 18px;
+    }
+
+    .detalhes-container{
+        margin: 10px;
+    }
+    
+    .detalhes-title-and-subtitle h1{
+        font-size: 170%;
+    }
+
+    .detalhes-title-and-subtitle p{
+        font-size: 100%;
+    }
+
+
+
+}
